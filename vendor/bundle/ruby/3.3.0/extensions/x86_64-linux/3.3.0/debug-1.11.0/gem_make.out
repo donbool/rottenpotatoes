@@ -1,0 +1,19 @@
+current directory: /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+/home/codio/.rbenv/versions/3.3.8/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250926-2108-p6zgiw sitelibdir\=./.gem.20250926-2108-p6zgiw clean
+
+current directory: /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250926-2108-p6zgiw sitelibdir\=./.gem.20250926-2108-p6zgiw
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250926-2108-p6zgiw sitelibdir\=./.gem.20250926-2108-p6zgiw install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20250926-2108-p6zgiw/debug
+
+current directory: /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/debug-1.11.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250926-2108-p6zgiw sitelibdir\=./.gem.20250926-2108-p6zgiw clean

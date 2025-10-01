@@ -1,0 +1,68 @@
+current directory: /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ext/sqlite3
+/home/codio/.rbenv/versions/3.3.8/bin/ruby extconf.rb
+Building sqlite3-ruby using packaged sqlite3.
+Extracting sqlite-autoconf-3500400.tar.gz into tmp/x86_64-linux-gnu/ports/sqlite3/3.50.4... OK
+Running 'configure' for sqlite3 3.50.4... OK
+Running 'compile' for sqlite3 3.50.4... OK
+Running 'install' for sqlite3 3.50.4... OK
+Activating sqlite3 3.50.4 (from /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4)...
+checking for pkg-config for /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc... not found
+
+Could not configure the build properly (pkg_config). Please install the `pkg-config` utility.
+
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include=${opt-dir}/include
+	--without-opt-include
+	--with-opt-lib=${opt-dir}/lib
+	--without-opt-lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/codio/.rbenv/versions/3.3.8/bin/$(RUBY_BASE_NAME)
+	--help
+	--download-dependencies
+	--with-sqlcipher
+	--without-sqlcipher
+	--with-sqlcipher-dir
+	--without-sqlcipher-dir
+	--with-sqlcipher-include
+	--without-sqlcipher-include
+	--with-sqlcipher-lib
+	--without-sqlcipher-lib
+	--enable-system-libraries
+	--disable-system-libraries
+	--with-sqlcipher
+	--without-sqlcipher
+	--with-sqlcipher-dir
+	--without-sqlcipher-dir
+	--with-sqlcipher-include
+	--without-sqlcipher-include
+	--with-sqlcipher-lib
+	--without-sqlcipher-lib
+	--with-sqlite-source-dir
+	--with-sqlite-cflags
+	--without-sqlite-cflags
+	--with-/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc-dir
+	--without-/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc-dir
+	--with-/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc-include=${/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc-dir}/include
+	--without-/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc-include
+	--with-/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc-lib=${/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc-dir}/lib
+	--without-/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc-lib
+	--with-/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc-config
+	--without-/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc-config
+	--with-pkg-config
+	--without-pkg-config
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/extensions/x86_64-linux/3.3.0/sqlite3-2.7.4/mkmf.log
+
+extconf failed, exit code 1

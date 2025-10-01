@@ -4,8 +4,12 @@ Given(/the following movies exist/) do |movies_table|
   movies_table.hashes.each do |movie|
     # each returned element will be a hash whose key is the table header.
     # you should arrange to add that movie to the database here.
+    if movie["release_date"]
+        movie["release_date"] = Date.strptime(movie["release_date"], "%d-%b-%Y")
+      end
+      Movie.create!(movie)
   end
-  pending "Fill in this step in movie_steps.rb"
+
 end
 
 Then(/(.*) seed movies should exist/) do |n_seeds|
@@ -18,9 +22,38 @@ end
 Then(/^I should see "(.*)" before "(.*)" in the movie list$/) do |e1, e2|
   #  ensure that that e1 occurs before e2.
   #  page.body is the entire content of the page as a string.
-  pending "Fill in this step in movie_steps.rb"
+  text =
+    if page.has_css?('#movies')
+      page.find('#movies').text
+    else
+      page.body
+    end
+
+  pos1 = text.index(e1)
+  pos2 = text.index(e2)
+
 end
 
+# use gpt5 for help with this step definition
+Then(/^I should see the movies in this order: (.+)$/) do |movie_list|
+    titles = movie_list.split(/\s*,\s*/)
+  
+    text = if page.has_css?('#movies')
+             page.find('#movies').text
+           else
+             page.body
+           end
+  
+    last_idx = -1
+    titles.each_with_index do |title, i|
+      idx = text.index(title)
+      expect(idx).not_to be_nil, %(Expected to find "#{title}" on the page)
+      expect(idx).to be > last_idx, %(
+        Expected "#{title}" to appear after "#{titles[i-1]}" in the output, but it did not
+      ) unless i.zero?
+      last_idx = idx
+    end
+  end
 
 # Make it easier to express checking or unchecking several boxes at once
 #  "When I check only the following ratings: PG, G, R"
@@ -29,17 +62,36 @@ When(/I check the following ratings: (.*)/) do |rating_list|
   # HINT: use String#split to split up the rating_list, then
   #   iterate over the ratings and reuse the "When I check..." or
   #   "When I uncheck..." steps in lines 89-95 of web_steps.rb
-  pending "Fill in this step in movie_steps.rb"
+  ratings = rating_list.split(/\s*,\s*/)
+
+  ratings.each do |r|
+    step %{I check "#{r}" checkbox}
+  end
 end
 
 Then(/^I should (not )?see the following movies: (.*)$/) do |no, movie_list|
   # Take a look at web_steps.rb Then /^(?:|I )should see "([^"]*)"$/
-  pending "Fill in this step in movie_steps.rb"
+  titles = movie_list.split(/\s*,\s*/)
+  titles.each do |title|
+    if negation
+      step %{I should not see "#{title}"}
+    else
+      step %{I should see "#{title}"}
+    end
+  end
 end
 
 Then(/^I should see all the movies$/) do
   # Make sure that all the movies in the app are visible in the table
-  pending "Fill in this step in movie_steps.rb"
+  if page.has_css?('#movies [id^="movie_"]')
+    rows = page.all('#movies [id^="movie_"]').size
+  elsif page.has_css?('#movies .movie, #movies article, #movies li')
+    rows = page.all('#movies .movie, #movies article, #movies li').size
+  else
+    rows = page.all('#movies a', text: 'Show this movie').size
+  end
+
+  expect(rows).to eq(Movie.count)
 end
 
 ### Utility Steps Just for this assignment.

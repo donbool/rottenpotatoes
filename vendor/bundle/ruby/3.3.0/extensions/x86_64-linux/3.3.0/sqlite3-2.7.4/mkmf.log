@@ -1,0 +1,5 @@
+pkg_config: checking for pkg-config for /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc... -------------------- not found
+
+package configuration for /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig/sqlite3.pc is not found
+--------------------
+

@@ -1,0 +1,10 @@
++ /usr/bin/install -d /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib
+/usr/bin/install -m 0644 libsqlite3.a "/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib"
++ /usr/bin/install -d /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/bin
+/usr/bin/install sqlite3 "/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/bin"
++ /usr/bin/install -d /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/include
+/usr/bin/install -m 0644 /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ext/sqlite3/tmp/x86_64-linux-gnu/ports/sqlite3/3.50.4/sqlite-autoconf-3500400/sqlite3.h /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ext/sqlite3/tmp/x86_64-linux-gnu/ports/sqlite3/3.50.4/sqlite-autoconf-3500400/sqlite3ext.h "/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/include"
++ /usr/bin/install -d /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig
+/usr/bin/install -m 0644 sqlite3.pc "/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/lib/pkgconfig"
++ /usr/bin/install -d /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/share/man/man1
+/usr/bin/install -m 0644 /home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ext/sqlite3/tmp/x86_64-linux-gnu/ports/sqlite3/3.50.4/sqlite-autoconf-3500400/sqlite3.1 "/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4/share/man/man1"

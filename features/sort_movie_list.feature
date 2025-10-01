@@ -25,9 +25,12 @@ Background: movies have been added to database
 Scenario: sort movies alphabetically
   When I select "Title" from "sort_by"
   # your steps here
-  Then complete the rest of of this scenario
+  When I select "Title" from "sort_by"
+  And I press "ratings_submit"
+  Then I should see the movies in this order: 2001: A Space Odyssey, Aladdin, Amelie, Chocolat
 
 Scenario: sort movies in increasing order of release date
   When I select "Release date" from "sort_by"
   # your steps here
-  Then complete the rest of of this scenario
+  And I press "ratings_submit"
+  Then I should see the movies in this order: 2001: A Space Odyssey, Raiders of the Lost Ark, The Terminator, Aladdin, The Incredibles, The Help

@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/home/codio/workspace/rottenpotatoes/vendor/bundle/ruby/3.3.0/gems/sqlite3-2.7.4/ports/x86_64-linux-gnu/sqlite3/3.50.4
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.50.4
+Libs: -L${libdir} -lsqlite3
+Libs.private: -lm -lz   
+Cflags: -I${includedir}
